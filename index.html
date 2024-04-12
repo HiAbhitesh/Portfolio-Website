@@ -233,6 +233,54 @@
           margin: auto;
         }
       }
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+    /* Rest of your CSS styles */
+
+    .form {
+      background-color: #f9f9f9;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .form h2 {
+      margin-bottom: 1rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-group textarea {
+      height: 150px;
+    }
+
+    button[type="submit"] {
+      background-color: #a855f7;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #9333ea;
+    }
     </style>
   </head>
   <body>
@@ -275,5 +323,28 @@
         </div>
       </div>
     </section>
+    <section class="section">
+      <div class="section__container">
+        <!-- Form Section -->
+        <div class="form">
+          <h2>Contact Me</h2>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>    
   </body>
 </html>
